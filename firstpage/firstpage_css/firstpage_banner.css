@@ -1,24 +1,22 @@
-.top{
-	height:155px ;
-	width:1440px ;
-}
 .banner{
 	height: 445px;
 	width: 1440px;
 }
-.new{
-	height:435px; 
-	width:1440px;
-}
-.goods{
-	height:1755px ;
+.banner img{
+	position: relative;
+	top: 33px;
 	width: 1440px;
 }
-.pays{
-	height: 322px;
-	width: 1440px;
-}
-.footer{
-	height: 215px;
-	width: 1440px;
+.buy_now{
+	text-align: center;
+    padding-top: 13px;
+    height: 35px;
+    width: 90px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    top: -65px;
+    font-family:'微软雅黑';
+    font-size:14px;
+    font-weight:bold;   
 }
