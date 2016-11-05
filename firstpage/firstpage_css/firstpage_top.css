@@ -2,15 +2,12 @@
 	height:155px ;
 	width:1440px ;
 }
-.top_nav{
-	color: 6d6d6d;
-	font-size: 12px; 
-	list-style: none;
-	font-family: '微软雅黑';
+.top_con{
+	margin: 0 220px;
 }
-.top_nav>li{
-}
+/*收货地址导航栏*/
 .adress{
+	position: absolute;
 	display: none;
 	height: 420px;
 	width: 307px;
@@ -48,6 +45,9 @@
 	font-weight:bold;  
 	margin-right: 30px;
 }
+.nav {
+	width: 80px;
+}
 .nav a{
 	margin-right: 15px;
 	color: #000000;
@@ -55,4 +55,88 @@
 }
 .nav:hover .adress{
 display: block;
+}
+.nav a:hover{
+	font-weight:bold; 
+}
+.nav img{
+	position: relative;
+    left: 1px;
+    top: -1px;
+}
+/*收货地址导航栏*/
+/*用户导航栏*/
+.personalcenter{
+	display: inline;
+	position: relative;
+	left: -5px;
+}
+.person_hide{
+	width: 97px;
+    height: 49px;
+    border: 1px solid #000000;
+    visibility: hidden; 
+    position: absolute;
+    left:0px;
+    padding-top: 10px;
+    padding-left: 4px;
+    top: 17px;
+}
+.user_nav{
+	color: #6d6d6d;
+	position: relative;
+	left: -165px;
+    float: right;
+    top: -18px;
+}
+.user_nav a{
+	color: #6d6d6d;
+	font-size: 12px; 
+	text-decoration: none;
+	font-family: '微软雅黑';
+	margin-right: 15px;
+    margin-left: 10px;
+}
+.shop{
+	position: relative;
+    top: -20px;
+    left: 505px;
+}
+.person_hide li{
+	list-style:none ;
+	line-height: 20px;
+}
+.personalcenter:hover .person_hide{
+	visibility: visible;
+}
+#shoppingcar{
+	position: relative;
+    left: -8px;
+    top: 1px;
+}
+#mobile{
+	position: relative;
+    left: 8px;
+    top: 2px;
+}
+.shop a{
+	position: relative;
+	left: 2px;
+}
+.personalcenter img{
+	    position: relative;
+    top: 1px;
+    left: 5px;
+}
+#tmailshop_icon{
+	position: relative;
+    left: 8px;
+    top: 1px;
+}
+#tmailshop{
+	position: relative;
+    left: -7px;
+}
+.personalcenter a:hover{
+	font-weight:bold; 
 }
