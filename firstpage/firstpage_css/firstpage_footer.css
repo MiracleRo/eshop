@@ -1,24 +1,20 @@
-.top{
-	height:155px ;
-	width:1440px ;
-}
-.banner{
-	height: 445px;
-	width: 1440px;
-}
-.new{
-	height:435px; 
-	width:1440px;
-}
-.goods{
-	height:1755px ;
-	width: 1440px;
-}
-.pays{
-	height: 322px;
-	width: 1440px;
-}
 .footer{
 	height: 215px;
 	width: 1440px;
+	background-color: #000000;
+	border-top: 1px solid #a9a6a6;
+}
+.footer_con{
+	margin: 0 220px;
+	position: relative;	
+    top: 32px;
+}
+.footer_con p{
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: '微软雅黑';
+}
+#footer_logo{
+	font-size: 30px;
 }
