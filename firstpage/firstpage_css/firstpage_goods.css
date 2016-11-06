@@ -1,24 +1,27 @@
-.top{
-	height:155px ;
-	width:1440px ;
-}
-.banner{
-	height: 445px;
-	width: 1440px;
-}
-.new{
-	height:435px; 
-	width:1440px;
-}
 .goods{
 	height:1755px ;
 	width: 1440px;
 }
-.pays{
-	height: 322px;
-	width: 1440px;
+.goods_con{
+	margin: 0 220px;
 }
-.footer{
-	height: 215px;
-	width: 1440px;
+.season{
+	position: relative;
+    top: 31px;
+}
+.color{
+	position: relative;
+    top: 81px;
+}
+.season_img{
+	display: inline-block;
+	margin-right: 20px;
+}
+.color_img{
+	display: inline-block;
+	margin-right: 21px;
+}
+.jean{
+	position: relative;
+    top: 123px;
 }
