@@ -220,13 +220,16 @@ display: block;
 	position: relative;
 	top: -7px;
 	left:390px;
-	width: 200px;
+	width: 270px;
 }
 .envy{
 	color: #23253a;
 }
 .look{
 	color:#1f3622;
+}
+.logo span{
+	letter-spacing:8px;
 }
 /*logo*/
 /*全部分类右侧导航栏*/
