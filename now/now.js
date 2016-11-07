@@ -2,6 +2,7 @@
 	var adress =document.getElementsByClassName('nav')[0];
 	var first_icon = document.getElementById('firstpage_icon');
 	adress.onmouseover = function(){
+	var personalcenter=document.getElementsByClassName('personalcenter')[0];
 			first_icon.src='now_images/top_down.png'
 	}
 	adress.onmouseout =function(){

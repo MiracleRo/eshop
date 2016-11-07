@@ -247,6 +247,7 @@ display: block;
 }
 /*搜索栏*/
 .search {
+	
 	position: relative;
 	top: 8px;
 	left: 688px;
@@ -259,7 +260,7 @@ display: block;
 }
 .search img{
 	position: relative;
-    top: -29px;
-    left: 282px;
+    top: -26px;
+    left: 281px;
 }
 /*搜索栏*/
