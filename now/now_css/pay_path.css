@@ -1,0 +1,94 @@
+.pay_path{
+	position: relative;
+    top: 32px;
+}
+.path_title{
+	height: 69px;
+	border: 2px solid #a2a3a2;
+	border-bottom-style:none; 
+}
+.path_way{
+	height: 478px;
+	border: 2px solid #a2a3a2;
+	font-size:14px;
+	font-family:'微软雅黑';
+	color: #000000;
+	padding-left: 43px;
+	padding-top: 6px;
+}
+.path_title span{
+	font-size:18px;
+	font-family:'微软雅黑';
+	color: #000000;
+	position: relative;
+	left: 43px;
+    top: 22px;
+}
+.path_way input{
+	position: relative;	
+	top: -11px;
+}
+.bank_con{
+	display: inline-block;
+    width: 200px;
+
+}
+.bank_upper{
+	margin-bottom: 27px;
+}
+.visa{
+	margin-top: 29px;
+}
+.aply{
+	margin-top: 20px;
+}
+.aply  p{
+	margin-bottom: 11px;
+}
+.visa img{
+	position: relative;
+    top: -4px;
+}
+.visa p{
+	margin-bottom: 11px;
+}
+.bank p{
+	margin-bottom: 11px;
+}
+.pay_footer{
+	font-size:14px;
+	font-family:'微软雅黑';
+	color: #000000;
+	letter-spacing: 2px;
+	line-height: 24px;
+	position: relative;
+    top: 23px;
+}
+.confirm_pay{
+	position: relative;
+	top: 63px;
+	font-size:12px;
+	font-family:'微软雅黑';
+	color: #000000;
+}
+.confirm_pay span{
+	position: relative;
+    top: -2px;
+    left: 13px;
+}
+.confirm_ipt{
+	 position: relative;
+    left: 44px;
+
+}
+.confirm_pay button{
+	width: 220px;
+	height: 40px;
+	border-style: none;
+	background-color: #1f3622;
+	font-size:18px;
+	font-family:'微软雅黑';
+	color: #ffffff;  
+	position: relative;
+	top: 17px;
+}
