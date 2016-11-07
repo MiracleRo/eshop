@@ -4,6 +4,7 @@
 }
 .confirm_con{
 	margin: 0 220px;
+	width: 1000px;
 }
 .confirm_title{
 	width: 41px;
@@ -28,13 +29,14 @@
 	font-size:14px;
 	font-family:'微软雅黑';
 	color: #a2a3a2;
-	width: 237px;
 	position: relative;
 	left: 44px;
 	top: 23px;
+	margin-right: 193px;
 }
 #last_flow{
 	 width: 68px;
+	 margin: 0;
 }
 #bold_flow{
 	color: #000000;
