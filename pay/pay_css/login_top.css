@@ -253,6 +253,7 @@ display: block;
 	width: 310px;
 }
 .search input{
+	padding-left: 5px;
 	border: 2px solid #a9a6a6;
 	height: 28px;
 	width: 308px;
