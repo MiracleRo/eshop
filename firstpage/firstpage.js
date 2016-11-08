@@ -38,4 +38,19 @@
  //    ctx.strokeText("2016/11/11",10,50); 
 	// }
 	// banner();
+	var banner = ['firstpage_images/banner1.jpg','firstpage_images/banner2.jpg','firstpage_images/banner3.jpg','firstpage_images/banner4.jpg']
+	var banners = document.getElementById('banners');
+	setInterval(function(){
+		var src = banners.getAttribute('src');
+		if (src==banner[0]) {
+			banners.setAttribute('src',banner[1]);
+		}else if (src==banner[1]) {
+			banners.setAttribute('src',banner[2]);
+		}else if (src==banner[2]) {
+			banners.setAttribute('src',banner[3]);
+		}else if (src==banner[3]) {
+			banners.setAttribute('src',banner[0]);
+		}
+	},3000)
+
 })();
