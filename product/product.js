@@ -26,33 +26,4 @@
 			allicon.src='product_images/top_up.png'
 	}
 	//所有分类导航栏改变图片函数
-	// function banner(){
-	// 	var c=document.getElementById("banner_canvas");
-	// var ctx=c.getContext("2d");
-	// ctx.font="Microsoft YaHei 95px";
-	// // ctx.fillStyle ='#ffffff';
-	// // ctx.strokeText("2016/11/11",10,50);
-	// ctx.fillStyle = "white";
- //    ctx.fillText("2016/11/11",10,50);
-	// ctx.strokeStyle = "black";
- //    ctx.strokeText("2016/11/11",10,50); 
-	// }
-	// banner();
-	var foc = document.getElementById('foc');
-	var blur =document.getElementById('blur');
-	var shop_text =document.createTextNode('商品详情');
-	var after_text =document.createTextNode('售后服务');
-	foc.onclick = function(){
-		if (!foc.classList.contains('click')) {
-			foc.classList.toggle('click');
-			blur.classList.toggle('click');
-		}
-		
-	}
-	blur.onclick =function(){
-		if (!blur.classList.contains('click')) {
-			foc.classList.toggle('click');
-		blur.classList.toggle('click');
-		}			
-	}
 })();
