@@ -246,7 +246,7 @@ li {
     left: 166px;
 }
 .by_classes:hover{
-	background-color: #23253a;
+	background-color: #000000;
 }
 .classes:hover .by_class{
     display: block;
