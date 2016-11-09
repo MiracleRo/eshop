@@ -1,5 +1,6 @@
 .car {
     height: 1290px;
+    width: 1440px;
 }
 
 .car_con {
@@ -146,6 +147,7 @@
 .num {
     position: relative;
     top: -50px;
+    width: 100px;
     left: 492px;
 }
 
@@ -192,6 +194,7 @@
     position: relative;
     left: 691px;
     top: -89px;
+    width: 200px;
 }
 
 .shop_buy {

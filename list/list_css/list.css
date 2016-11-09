@@ -1,4 +1,5 @@
 .list {
+    width: 1440px;
     height: 2300px;
 }
 
@@ -111,6 +112,7 @@
     position: relative;
     left: 432px;
     top: -10px;
+    width: 500px;
 }
 .buttons button{
      color: #000000;

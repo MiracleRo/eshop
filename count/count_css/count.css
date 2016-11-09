@@ -1,9 +1,9 @@
 .count {
+    width: 1440px;
     height: 1080px;
 }
 
 .count_con {
-    width: 1000px;
     margin: 0 220px;
 }
 
@@ -112,6 +112,7 @@ input {
     position: relative;
     top: -615px;
     left: 557px;
+    width: 440px;
 }
 
 .mesdiv_top select {

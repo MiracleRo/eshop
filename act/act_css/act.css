@@ -1,5 +1,7 @@
 .act {
+    width: 1440px;
     height: 3675px;
+    overflow-x:hidden; 
 }
 
 .act_con {
