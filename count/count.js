@@ -26,16 +26,5 @@
 			allicon.src='count_images/top_up.png'
 	}
 	//所有分类导航栏改变图片函数
-	// function banner(){
-	// 	var c=document.getElementById("banner_canvas");
-	// var ctx=c.getContext("2d");
-	// ctx.font="Microsoft YaHei 95px";
-	// // ctx.fillStyle ='#ffffff';
-	// // ctx.strokeText("2016/11/11",10,50);
-	// ctx.fillStyle = "white";
- //    ctx.fillText("2016/11/11",10,50);
-	// ctx.strokeStyle = "black";
- //    ctx.strokeText("2016/11/11",10,50); 
-	// }
-	// banner();
+
 })();

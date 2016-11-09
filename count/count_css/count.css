@@ -71,19 +71,30 @@
     color: #000000;
     position: relative;
     left: 43px;
-    top: 18px;
+    top: 20px;
 }
 
-.mesdiv_left select,
-input {
+.mesdiv_left select{
     border: 2px solid #a2a3a2;
     height: 33px;
     font-size: 14px;
     font-family: '微软雅黑';
     color: #000000;
     padding-left: 6px;
-    width: 250px;
+    width: 252px;
+    height: 37px;
 }
+.mesdiv_left input{
+    border: 2px solid #a2a3a2;
+    height: 33px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #000000;
+    padding-left: 6px;
+    width: 242px;
+        height: 31px;   
+}
+
 
 .mesdiv_left p {
     font-size: 12px;
@@ -110,8 +121,8 @@ input {
     font-family: '微软雅黑';
     color: #000000;
     position: relative;
-    top: -615px;
-    left: 557px;
+    top: -646px;
+    left: 532px;
     width: 440px;
 }
 
@@ -131,14 +142,18 @@ input {
 }
 
 #useremail {
+    border: 2px solid #a2a3a2;
     width: 235px;
     margin-right: 12px;
+    height: 31px;   
 }
 
 #mailtype {
     width: 105px;
+    border: 2px solid #a2a3a2;
     margin-left: 12px;
     margin-right: 4px;
+    height: 31px;   
 }
 
 #day,
@@ -157,10 +172,19 @@ input {
     float: right;
     display: inline-block;
     position: relative;
-    top: -458px;
-    left: -27px;
+    top: -498px;
+    left: -49px;
 }
-
+.mesdiv_bottom input{
+    border: 2px solid #a2a3a2;
+    height: 33px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #000000;
+    padding-left: 6px;
+    width: 242px;
+        height: 31px;   
+}
 .mesdiv_bottom button {
     width: 220px;
     height: 40px;

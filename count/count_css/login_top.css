@@ -253,14 +253,17 @@ display: block;
 	width: 310px;
 }
 .search input{
-	padding-left: 5px;
-	border: 2px solid #a9a6a6;
-	height: 28px;
-	width: 308px;
+	padding-left: 10px;
+    border: 2px solid #a9a6a6;
+    height: 28px;
+    width: 308px;
+    font-size: 12px;
+    font-family: '微软雅黑';
+    letter-spacing: 2px;
 }
 .search img{
 	position: relative;
-    top: -26px;
-    left: 281px;
+    top: -29px;
+    left: 282px;
 }
 /*搜索栏*/
