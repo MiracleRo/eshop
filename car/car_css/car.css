@@ -68,15 +68,13 @@
 .shop_car {
     display: inline-block;
     width: 770px;
-    position: absolute;
-    margin-top: 62px;
     float: right;
+    margin-top: 62px;
 }
 
 .goods_dic {
-    border: 1px solid #000000;
-    border-left: none;
-    border-right: none;
+    border-top: 1px dotted #000000;
+    border-bottom: 1px dotted #000000;
     padding-top: 16px;
     height: 35px;
     padding-left: 15px;
@@ -116,7 +114,7 @@
     padding-left: 15px;
     margin-top: 20px;
     height: 108px;
-    border-bottom: 1px solid #000000;
+   border-bottom: 1px dotted #000000;
 }
 
 .shop_goods {
@@ -151,49 +149,49 @@
     left: 492px;
 }
 
-.num button {
+.add,.sub{
     width: 11px;
     height: 11px;
     border: none;
     background-color: #000000;
     color: #ffffff;
+    margin: 0;
 }
 
 .add {
     position: relative;
-    top: -3px;
-    left: 5px;
+    top: -70px;
+    left: 510px;
 }
 
 .add span {
     position: relative;
-    top: -3px;
-    left: -4px;
+    top: -5px;
 }
 
 .sub {
     position: relative;
-    top: 10px;
-    left: -11px;
+    top: -68px;
+    left: 510px;
 }
 
 .sub span {
-    position: relative;
-    top: -4px;
-    left: -2px;
+   position: relative;
+    top: -5px;
+    left: 2px;
 }
 
 .cost {
     position: relative;
     left: 584px;
-    top: -67px;
+    top: -90px;
 }
 
 .del {
     color: #000000;
     position: relative;
     left: 691px;
-    top: -89px;
+   top: -111px;
     width: 200px;
 }
 
