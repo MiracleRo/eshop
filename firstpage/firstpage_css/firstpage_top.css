@@ -235,18 +235,21 @@ li {
     display: block;
 }
 
-#by_class {
+.by_class {
 	display: none;
 	z-index: 88;
 	background-color: #1f3622;
     height: 196px;
     width: 160px;
     position: absolute;
-    top: 19px;
+    top: 0px;
     left: 166px;
 }
 .by_classes:hover{
-	background-color: red;
+	background-color: #23253a;
+}
+.classes:hover .by_class{
+    display: block;
 }
 
 .by_classes {
