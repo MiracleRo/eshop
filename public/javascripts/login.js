@@ -21,6 +21,7 @@
             sendCmd('log', function (data) {
                 if (data.result == true) {
                     alert("登录成功");
+                    window.open('./index.html');
                 } else {
                     alert("登录失败");
                 }

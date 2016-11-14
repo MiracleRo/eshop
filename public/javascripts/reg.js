@@ -19,10 +19,12 @@
         });
     }
     btn_reg.onclick = function () {
+        console.log(1);
         if(password.value==last.value){
             sendCmd('reg', function (data) {
                 if (data.result == true) {
                     alert("注册成功");
+                    window.open('./login.html');
                 } else {
                     alert("注册失败");
                 }
