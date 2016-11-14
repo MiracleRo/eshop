@@ -14,6 +14,7 @@ router.post('/reg', function (req,res,next) {
     res.end();
   })
 });
+//注册
 router.post('/log', function (req,res,next) {
   userDao.log(req.body.username, req.body.password, function (result) {
     res.contentType('json');//返回的数据类型
@@ -22,10 +23,17 @@ router.post('/log', function (req,res,next) {
 
   })
 })
+//登录
 router.get('/sell.html',function (req,res,next) {
   res.sendFile( '/home/miracle/shop/public/sell.html');
 })
+//卖家后台html
 router.post('/insert',function (req,res,next) {
   selldao.insert(req.body.name, req.body.price,req.body.color,req.body.siez, req.body.num, req.body.src)
 })
+//卖家后台post
+router.post('/list',function (req,res,next) {
+  userDao.list_load(req,res,next);
+})
+//向list.html插入数据库数据；
 module.exports = router;
