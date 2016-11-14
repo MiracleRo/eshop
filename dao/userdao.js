@@ -43,6 +43,7 @@ module.exports = {
                 callback(false);
             }
         });
+        connection.end();
     },
    list_load: function (req,res,next) {
         var connection = mysql.createConnection(conf.mysql);
