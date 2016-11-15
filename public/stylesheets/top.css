@@ -340,5 +340,7 @@ li {
     left: 282px;
 }
 
-
+#search_img:hover{
+    cursor: pointer;
+}
 /*搜索栏*/

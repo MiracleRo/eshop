@@ -4,18 +4,18 @@
 var url = "http://127.0.0.1:3000/list";
 window.onload=function () {
     $.post(url,{},function (data, status) {
-        for(var i=0;i<data.length;i++){
-            addDiv();
-            var imgs = document.getElementsByClassName('imgs')[0];
-            var p=imgs.getElementsByTagName('p');
-            var span=imgs.getElementsByTagName('span');
-            var pics =imgs.getElementsByTagName('img');
-            var name=document.createTextNode(data[i].GoodName);
-            var price=document.createTextNode('¥'+data[i].price);
-            span[i].appendChild(name);
-            p[i].appendChild(price);
-            pics[i].setAttribute('src',data[i].src);
-        }
+            for(var i=0;i<data.length;i++){
+                addDiv();
+                var imgs = document.getElementsByClassName('imgs')[0];
+                var p=imgs.getElementsByTagName('p');
+                var span=imgs.getElementsByTagName('span');
+                var pics =imgs.getElementsByTagName('img');
+                var name=document.createTextNode(data[i].goodname);
+                var price=document.createTextNode('¥'+data[i].price);
+                span[i].appendChild(name);
+                p[i].appendChild(price);
+                pics[i].setAttribute('src',data[i].src);
+            }
     })
     function  addDiv() {
         var imgs=document.getElementsByClassName('imgs')[0];

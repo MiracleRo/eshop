@@ -4,7 +4,8 @@
 var mysql = require('mysql');
 var conf = require('../config/db');
 var sql = require('./usersql');
-var good_sql =require('./goods')
+var good_sql =require('./goods');
+var car = require('./car');
 var jsonWrite = function (res, ret) {
     if (typeof ret === 'undefined') {
         res.json({
@@ -48,8 +49,23 @@ module.exports = {
    list_load: function (req,res,next) {
         var connection = mysql.createConnection(conf.mysql);
         connection.connect();
-        connection.query(good_sql.queryAll,function (error, rows, flied) {
+        connection.query(car.queryAll,function (error, rows, flied) {
             res.send(rows);
         });
     },
+    search:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(car.delete,function (error, rows, flied) {
+            connection.query(good_sql.queryById,[req.body.keyword],function (error, rows, flied) {
+                for (var i=0;i<rows.length;i++){
+                    connection.query(car.insert,[rows[i].GoodName, rows[i].price, rows[i].color, rows[i].siez, rows[i].num, rows[i].src,''],function (error, rows, flied) {
+                    })
+                    if(i==rows.length-1){
+                        res.send(rows);
+                    }
+                }
+            });
+        });
+    }
 }

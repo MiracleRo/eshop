@@ -36,4 +36,7 @@ router.post('/list',function (req,res,next) {
   userDao.list_load(req,res,next);
 })
 //向list.html插入数据库数据；
+router.post('/search',function (req,res,next) {
+ userDao.search(req,res,next);
+})
 module.exports = router;

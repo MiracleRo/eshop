@@ -113,4 +113,19 @@
 		setadd();
 	}
 	//改变首页地址方法;
+    var search =document.getElementById('search');
+    var search_img=document.getElementById('search_img');
+    var searches='http://127.0.0.1:3000/search';
+    search_img.onclick=function () {
+        $.post(searches,{
+        	keyword:search.value
+		},function (data, status) {
+			console.log(data);
+			console.log(status);
+			if(status=='success'){
+				window.open('./list.html');
+			}
+        })
+
+    }
 })();
