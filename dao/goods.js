@@ -7,6 +7,6 @@ var goods = {
     delete:'delete from user where UserName =? and UserPass = ?',
     queryById:'select * from goods where GoodName like "%"?"%"',
     queryAll:'select * from goods',
-    log:'select * from user where UserName=? and UserPass = ?'
+    read:'select * from goods where GoodName="黑色皮衬衫外套"'
 };
 module.exports = goods;

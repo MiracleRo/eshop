@@ -39,4 +39,10 @@ router.post('/list',function (req,res,next) {
 router.post('/search',function (req,res,next) {
  userDao.search(req,res,next);
 })
+router.get('/product.html',function (req,res,next) {
+  res.sendFile( '/home/miracle/shop/public/product.html')
+})
+router.post('/pro', function (req,res,next) {
+ userDao.act(req,res,next);
+})
 module.exports = router;

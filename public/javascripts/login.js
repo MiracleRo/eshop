@@ -21,10 +21,12 @@
             sendCmd('log', function (data) {
                 if (data.result == true) {
                     alert("登录成功");
+                    sessionStorage.setItem('user',num.value);
                     window.open('./index.html');
                 } else {
                     alert("登录失败");
                 }
             });
+
     };
 })();

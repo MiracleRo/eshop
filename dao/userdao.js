@@ -6,6 +6,7 @@ var conf = require('../config/db');
 var sql = require('./usersql');
 var good_sql =require('./goods');
 var car = require('./car');
+var cars = require('./act');
 var jsonWrite = function (res, ret) {
     if (typeof ret === 'undefined') {
         res.json({
@@ -67,5 +68,14 @@ module.exports = {
                 }
             });
         });
+    },
+    act:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(good_sql.read,function (error, rows, flied) {
+            connection.query(cars.insert,['./images/car1.jpg',rows[0].GoodName,rows[0].color, rows[0].siez,req.body.num,rows[0].price,req.body.user],function () {
+            })
+        });
+
     }
 }
