@@ -4,7 +4,8 @@
 var car= {
     insert:'insert into car (goodname ,price ,color ,siez ,num ,src,name) values (?,?,?,?,?,?,?)',
     update:'update goods set UserPass =? where UserName = ?',
-    delete:'delete from car',
+    delete:'delete from car where id =?',
     queryAll:'select * from car',
+    queryBy:'select * from car where id =?',
 };
 module.exports = car;

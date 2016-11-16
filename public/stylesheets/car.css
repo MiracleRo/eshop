@@ -191,9 +191,15 @@
 .del {
     color: #000000;
     position: relative;
-    left: 691px;
-   top: -111px;
+    left: 644px;
+    top: -90px;
     width: 10px;
+    border: none;
+    background-color: #ffffff;
+}
+.del>span{
+    position: relative;
+    left: -3px;
 }
 
 .shop_buy {

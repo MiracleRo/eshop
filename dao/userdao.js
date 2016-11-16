@@ -77,5 +77,26 @@ module.exports = {
             })
         });
 
+    },
+    shop_car:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(cars.queryAll,function (error, rows, flied) {
+            res.send(rows);
+        });
+    },
+    shop_del:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(cars.delete,[req.body.id],function (error, rows, flied) {
+            res.send(rows);
+        });
+    },
+    clear:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(cars.clear,[req.body.name],function (error, rows, flied) {
+            res.send(rows);
+        });
     }
 }

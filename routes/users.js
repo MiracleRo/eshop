@@ -45,4 +45,13 @@ router.get('/product.html',function (req,res,next) {
 router.post('/pro', function (req,res,next) {
  userDao.act(req,res,next);
 })
+router.post('/car', function (req,res,next) {
+   userDao.shop_car(req,res,next);
+})
+router.post('/shop_del', function (req,res,next) {
+    userDao.shop_del(req,res,next);
+})
+router.post('/clear', function (req,res,next) {
+    userDao.clear(req,res,next);
+})
 module.exports = router;
