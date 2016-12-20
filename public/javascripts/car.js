@@ -4,11 +4,19 @@
 (function () {
     var url = "http://127.0.0.1:3000/car"
     var del =document.getElementsByClassName('del');
-    function aaa() {
-        $.post(url,{},function (data, status) {
+    function aaa(){
+
+            $.post(url,{},function (data, status) {
             var shop_car =document.getElementsByClassName('shop_car')[0];
             var shop_buy = document.getElementsByClassName('shop_buy')[0];
+            var tal=0;
+            var shop_buy=document.getElementsByClassName('shop_buy')[0];
+            var p =shop_buy.getElementsByTagName('p')[0];
             for(var i =0;i<data.length;i++){
+                p.innerHTML='';
+                tal+=data[i].cost;
+                p.innerHTML='商品金额: ¥'+tal;
+                console.log(tal);
                 var shop_goods = document.createElement('div');
                 shop_goods.setAttribute('class','shop_goods');
                 shop_car.insertBefore(shop_goods,shop_buy);
